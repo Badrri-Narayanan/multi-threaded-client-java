@@ -5,8 +5,13 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * API Response DTO to get list of countries.
+ * @author Badrri Narayanan S
+ *
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ExpressServerResponse {
+public class CountryListResponse {
 	@JsonProperty("countries")
 	List<String> countries;
 
@@ -18,6 +23,6 @@ public class ExpressServerResponse {
 		this.countries = countries;
 	}
 	
-	public ExpressServerResponse() {
+	public CountryListResponse() {
 	}
 }
